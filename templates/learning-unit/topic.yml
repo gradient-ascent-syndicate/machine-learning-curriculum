@@ -1,0 +1,24 @@
+id: topic-slug
+title: Topic Name
+status: planned
+track: foundations
+level: beginner
+
+prerequisites:
+  - prerequisite-topic-id
+
+next:
+  - next-topic-id
+
+activities:
+  learn: true
+  derive: true
+  build: true
+  use: true
+  experiment: true
+  reflect: true
+
+artifacts:
+  - README.md
+
+maintainers: []
