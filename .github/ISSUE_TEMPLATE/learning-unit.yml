@@ -1,0 +1,77 @@
+name: Learning Unit
+description: Propose or claim a curriculum topic to learn and contribute
+title: "[Learning Unit] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Use this issue to define a topic before building it. The goal is to make the learning contract clear before implementation starts.
+
+  - type: input
+    id: topic
+    attributes:
+      label: Topic
+      placeholder: e.g. TF-IDF
+    validations:
+      required: true
+
+  - type: dropdown
+    id: track
+    attributes:
+      label: Curriculum track
+      options:
+        - 00 Foundations
+        - 01 Data & Experimentation
+        - 02 ML Fundamentals
+        - 03 Supervised Learning
+        - 04 Unsupervised Learning
+        - 05 Semi-Supervised & Self-Supervised Learning
+        - 06 Neural Networks & Deep Learning
+        - 07 Computer Vision
+        - 08 Natural Language Processing
+        - 09 Reinforcement Learning
+        - 10 ML Engineering & MLOps
+        - 11 Advanced AI Systems
+    validations:
+      required: true
+
+  - type: textarea
+    id: prerequisites
+    attributes:
+      label: Prerequisites
+      description: What should the learner already know?
+    validations:
+      required: true
+
+  - type: textarea
+    id: objectives
+    attributes:
+      label: Learning objectives
+      description: State concrete outcomes using verbs such as explain, derive, implement, compare, diagnose, or evaluate.
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: activities
+    attributes:
+      label: Planned learning activities
+      options:
+        - label: LEARN — intuition and concepts
+        - label: DERIVE — mathematics where relevant
+        - label: BUILD — from-scratch implementation where useful
+        - label: USE — standard library implementation
+        - label: EXPERIMENT — behaviour, baselines, edge cases
+        - label: REFLECT — assumptions, failure modes, trade-offs
+
+  - type: textarea
+    id: experiments
+    attributes:
+      label: Proposed experiments
+      description: What questions should the learner investigate rather than merely demonstrate?
+
+  - type: textarea
+    id: references
+    attributes:
+      label: Starting references
+      description: Prefer canonical textbooks, original papers, or official documentation.
