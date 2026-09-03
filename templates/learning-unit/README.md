@@ -1,86 +1,120 @@
 # <Topic Name>
 
-## Why this topic matters
-
-Explain where this concept fits in machine learning and what problems it helps solve.
+> One-sentence explanation of what this topic is and why it matters.
 
 ## Prerequisites
 
-- [ ] Prerequisite 1
-- [ ] Prerequisite 2
-
-Link to internal curriculum units where available.
+List the concepts a learner should already understand. Link to canonical curriculum units where possible instead of re-explaining them here.
 
 ## Learning objectives
 
-By the end of this unit, a learner should be able to:
+After completing this unit, a learner should be able to:
 
-- explain ...
-- derive ...
-- implement ...
-- evaluate ...
-- identify when not to use ...
+- explain the concept intuitively;
+- reason through or derive the important mechanics;
+- implement the essential idea when educationally useful;
+- use an appropriate standard library, framework, or system implementation;
+- design and interpret experiments or evaluations;
+- identify important failure modes, limitations, and trade-offs;
+- explain when this method should and should not be used.
 
-## 🟢 Level 1 — LEARN
+## 1. LEARN — intuition
 
-Explain the intuition in plain language. Define all important terms and give at least one concrete example.
+Explain the idea in plain language before introducing notation or framework APIs.
 
-## 🟡 Level 2 — DERIVE / BUILD
+Include:
 
-### Mathematics
+- the problem the method solves;
+- the intuition behind the solution;
+- assumptions;
+- important terminology;
+- a small worked example where useful.
 
-State the notation and derive the important equations where relevant.
+## 2. DERIVE — mechanics and mathematics
 
-### From-scratch implementation
+Work through the mathematics, algorithms, computational graph, protocol, or systems mechanics required to genuinely understand the topic.
 
-Implement the core mechanism without calling the high-level library implementation when doing so is educationally useful.
+Do not add mathematics merely for appearance. Explain what each equation or operation means.
 
-## 🟠 Level 3 — USE / EXPERIMENT
+## 3. BUILD — from first principles
 
-### Standard implementation
+Implement the core idea with minimal abstractions when doing so improves understanding.
 
-Use an appropriate production/library implementation and explain important parameters.
+Examples:
 
-### Experiments
+- NumPy for classical ML or neural-network mechanics;
+- a simple retriever before using a vector database;
+- a basic evaluation loop before using an evaluation framework;
+- a small agent state machine before using an orchestration framework.
 
-Design experiments that reveal how the method behaves rather than merely showing that it runs.
+If a from-scratch implementation would be misleading or impractical, explain why and build the smallest meaningful version instead.
 
-Suggested questions:
+## 4. USE — standard implementation
 
-1. Which assumptions matter most?
-2. Which hyperparameters change behaviour substantially?
-3. How does the method fail?
-4. What happens on edge cases or noisy data?
-5. How does it compare with a reasonable baseline?
+Apply a standard library, framework, model, or production approach.
 
-## 🔴 Level 4 — EXTEND
+Explain important API choices rather than presenting unexplained code.
 
-Optional deeper work such as an alternative formulation, paper reproduction, optimization, ablation, or comparison against a more advanced method.
+## 5. EXPERIMENT — investigate behavior
 
-## Failure modes and trade-offs
+Design experiments that reveal how the topic behaves.
 
-Document assumptions, weaknesses, computational considerations, and situations where another method is preferable.
+Possible experiments include:
+
+- parameter or hyperparameter sweeps;
+- ablations;
+- dataset or distribution changes;
+- edge cases;
+- noise and robustness tests;
+- latency/cost/quality comparisons;
+- evaluation slices;
+- failure-recovery tests for systems or agents.
+
+State the hypothesis before presenting the result where practical.
+
+## 6. REFLECT — limitations and trade-offs
+
+Discuss:
+
+- common failure modes;
+- assumptions that break;
+- computational and data requirements;
+- alternatives;
+- operational concerns where relevant;
+- when a simpler approach is preferable.
 
 ## Exercises
 
-1. Conceptual question.
-2. Derivation/problem-solving exercise.
-3. Implementation task.
-4. Experiment or debugging task.
+Provide a progression such as:
 
-Do not place full solutions directly beside the exercise unless the learning unit explicitly intends them to be visible.
+### 🟢 Level 1 — Understand
+Conceptual questions and small calculations.
 
-## Completion checklist
+### 🟡 Level 2 — Implement
+Implementation or debugging tasks.
 
-A learner can consider this unit complete when they can:
+### 🟠 Level 3 — Experiment
+Experiments, comparisons, evaluations, and diagnosis.
 
-- [ ] explain the idea without relying on library terminology;
-- [ ] interpret the main equations;
-- [ ] implement or correctly use the method;
-- [ ] choose appropriate evaluation criteria;
-- [ ] interpret experimental results;
-- [ ] explain at least two failure modes or trade-offs.
+### 🔴 Level 4 — Extend / Research
+Extensions, reproductions, deeper investigations, or open-ended work.
+
+## Completion criteria
+
+A learner should be able to demonstrate understanding without simply replaying this unit. Define concrete evidence such as implementing a core component, explaining an experiment, diagnosing a failure, or comparing alternatives.
 
 ## References
 
-Prefer original papers, canonical textbooks, official documentation, and high-quality educational references.
+Prefer primary papers, canonical textbooks, official documentation, strong courses, and high-quality technical references. Distinguish primary references from optional supplementary material.
+
+## Reproducibility
+
+Where relevant, record:
+
+- environment/dependency requirements;
+- dataset source and version;
+- random seeds;
+- model/checkpoint versions;
+- important configuration values;
+- hardware assumptions;
+- evaluation procedure.
