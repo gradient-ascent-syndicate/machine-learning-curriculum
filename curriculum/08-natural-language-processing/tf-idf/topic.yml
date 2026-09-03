@@ -1,0 +1,32 @@
+id: tf-idf
+title: TF-IDF
+track: natural-language-processing
+status: draft
+difficulty:
+  - understand
+  - implement
+  - experiment
+prerequisites:
+  - python-basics
+  - text-preprocessing
+  - bag-of-words
+  - logarithms
+learning_contract:
+  - learn
+  - derive
+  - build
+  - use
+  - experiment
+  - reflect
+next_topics:
+  - cosine-similarity
+  - information-retrieval-basics
+  - bm25
+  - text-classification
+  - word-embeddings
+artifacts:
+  - README.md
+  - from_scratch.py
+  - sklearn_example.py
+  - experiments.md
+  - exercises.md
