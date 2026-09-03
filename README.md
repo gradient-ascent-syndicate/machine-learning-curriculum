@@ -34,7 +34,7 @@ We standardize each topic around six activities:
 
 ## Curriculum map
 
-The curriculum is organized as a knowledge graph rather than a flat resource list.
+The curriculum is organized as a dependency graph rather than a flat resource list.
 
 ```text
 00 Foundations
@@ -45,53 +45,59 @@ The curriculum is organized as a knowledge graph rather than a flat resource lis
    └── Statistics
 
 01 Data & Experimentation
-   ├── Data Cleaning
-   ├── EDA
-   ├── Feature Engineering
-   ├── Sampling
-   ├── Leakage
-   └── Experimental Design
-
 02 ML Fundamentals
-   ├── Train / Validation / Test
-   ├── Bias vs Variance
-   ├── Regularization
-   ├── Cross Validation
-   └── Evaluation Metrics
-
 03 Supervised Learning
-   ├── Regression
-   └── Classification
-
 04 Unsupervised Learning
-   ├── Clustering
-   ├── Dimensionality Reduction
-   └── Anomaly Detection
-
 05 Semi-Supervised & Self-Supervised Learning
 
 06 Neural Networks & Deep Learning
+   ├── Neural Network Foundations
+   ├── Training Neural Networks
+   ├── Generalization & Stability
+   ├── Core Architectures
+   ├── Generative Deep Learning
+   └── Practical Deep Learning
 
 07 Computer Vision
-
 08 Natural Language Processing
-
 09 Reinforcement Learning
-
 10 ML Engineering & MLOps
 
-11 Advanced AI Systems
+11 Specialized ML Domains
+   ├── Time Series & Forecasting
    ├── Recommender Systems
    ├── Graph ML
-   ├── Time Series
    ├── Causal ML
-   ├── Generative Models
+   └── Probabilistic ML
+
+12 Generative AI & LLMs
+   ├── Pretraining & Adaptation
+   ├── Inference
+   ├── Prompting & Context
    ├── Retrieval & RAG
-   ├── Agents
-   └── AI Evaluation
+   └── LLM Reliability
+
+13 Agentic AI
+   ├── Tool Use
+   ├── Planning
+   ├── Memory & State
+   ├── Agent Architectures
+   ├── Production Orchestration
+   └── Agent Evaluation
+
+14 AI Evaluation, Safety & Alignment
+
+15 AI Systems & Infrastructure
+   ├── Training Systems
+   ├── Inference Systems
+   ├── Serving
+   ├── Retrieval Infrastructure
+   └── AI Platform Engineering
 ```
 
-See [`ROADMAP.md`](ROADMAP.md) for the learning paths and [`curriculum/README.md`](curriculum/README.md) for the detailed topic tree.
+This is intentionally broad enough to take a learner from statistics and classical ML all the way to modern deep-learning systems, LLMs, agents, evaluation, and production AI infrastructure.
+
+See [`ROADMAP.md`](ROADMAP.md) for learning paths and [`curriculum/README.md`](curriculum/README.md) for the detailed topic tree.
 
 ## Start here
 
@@ -132,7 +138,11 @@ machine-learning-curriculum/
 │   ├── 08-natural-language-processing/
 │   ├── 09-reinforcement-learning/
 │   ├── 10-ml-engineering/
-│   └── 11-advanced-ai-systems/
+│   ├── 11-specialized-ml-domains/
+│   ├── 12-generative-ai-and-llms/
+│   ├── 13-agentic-ai/
+│   ├── 14-ai-evaluation-safety-and-alignment/
+│   └── 15-ai-systems-and-infrastructure/
 └── templates/
     └── learning-unit/
 ```
